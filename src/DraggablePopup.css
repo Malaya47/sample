@@ -1,0 +1,26 @@
+.draggable-popup {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(82, 73, 73, 0.952);
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .popup-header {
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup-content {
+    padding: 10px;
+  }
+  

@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ResizableLeftSection from "./ResizableLeftSection";
+import ResizableRightSection from "./ResizableRightSection";
+import DraggablePopup from "./DraggablePopup";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [popupVisible, setPopupVisible] = useState(false);
+
+  const handleSaveClick = () => {
+    setPopupVisible(true);
+  };
+
+  const handleClosePopup = () => {
+    setPopupVisible(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav className="navigation-bar">This is navigation bar!!</nav>
+      <button onClick={handleSaveClick}>Save</button>
+      {popupVisible && <DraggablePopup onClose={handleClosePopup} />}
+      <div className="sections">
+        <ResizableLeftSection />
+        <ResizableRightSection />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

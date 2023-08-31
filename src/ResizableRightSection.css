@@ -1,0 +1,17 @@
+  .resizable-right-section {
+    position: relative;
+    border-left: 1px solid #ccc;
+    overflow: hidden;
+    border: 5px solid black;
+  }
+  
+   .resizer {
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    cursor: col-resize;
+    background-color: #eee;
+    z-index: 1;
+  } 
+    

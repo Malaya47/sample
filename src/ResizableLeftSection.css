@@ -1,0 +1,33 @@
+.resizable-left-section {
+    position: relative;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+    border: 2px solid red;
+    margin-top: 10px;
+  }
+  
+  .resizer {
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    right: -5px;
+    cursor: col-resize;
+    background-color: #eee;
+    z-index: 1;
+  }
+  .wrapper {
+   display: flex;
+   flex-wrap: wrap; 
+   flex-direction: row;
+   
+  }
+
+  .box{
+    background-color: yellowgreen;
+    width: 100px;
+    height:90px;
+    border: 1px solid rebeccapurple;
+    margin: 5px;
+  }
+  
+  
