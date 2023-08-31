@@ -17,13 +17,18 @@ const App = () => {
 
   return (
     <div>
-      <nav className="navigation-bar">This is navigation bar!!</nav>
-      <button onClick={handleSaveClick}>Save</button>
+      <nav className="navigation-bar"></nav>
+      <div className="button-section">
+        <button onClick={handleSaveClick} className="save-button">
+          Save
+        </button>
+      </div>
       {popupVisible && <DraggablePopup onClose={handleClosePopup} />}
       <div className="sections">
         <ResizableLeftSection />
         <ResizableRightSection />
       </div>
+      <footer className="footer">footer</footer>
     </div>
   );
 };

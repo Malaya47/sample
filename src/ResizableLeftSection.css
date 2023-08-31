@@ -2,11 +2,13 @@
     position: relative;
     border-right: 1px solid #ccc;
     overflow: hidden;
-    border: 2px solid red;
+    border: 2px solid whitesmoke;
     margin-top: 10px;
+    background-color: lightblue;
+    height: 70vh;
   }
   
-  .resizer {
+  .resizer-left {
     width: 10px;
     height: 100%;
     position: absolute;
@@ -23,7 +25,8 @@
   }
 
   .box{
-    background-color: yellowgreen;
+    background-color: rgb(167, 162, 162);
+    border-radius: 4px;
     width: 100px;
     height:90px;
     border: 1px solid rebeccapurple;

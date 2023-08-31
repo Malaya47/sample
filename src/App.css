@@ -1,6 +1,5 @@
 .navigation-bar {
-    border: 2px solid black;
-    background-color: aquamarine;
+    background-color: #008080;
     height: 10vh;
 }
 .sections {
@@ -8,4 +7,23 @@
     flex-direction:row;
     justify-content: space-between;
     
+}
+.right-outer{
+    border: 2px solid green;
+}
+.left-outer{
+    border: 2px solid blueviolet;
+}
+.save-button{
+    padding: 5px;
+    width: 4rem;
+    margin-left: 10vh;
+}
+.button-section{
+    background-color: white;
+    margin-top: 2vh;
+}
+.footer{
+    background-color: #008080;
+    height: 15vh;
 }

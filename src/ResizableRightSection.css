@@ -2,10 +2,13 @@
     position: relative;
     border-left: 1px solid #ccc;
     overflow: hidden;
-    border: 5px solid black;
+    border: 2px solid whitesmoke;
+    height: 60vh;
+    background-color: lightblue;
+    height: 70vh;
   }
   
-   .resizer {
+   .resizer-right {
     width: 10px;
     height: 100%;
     position: absolute;

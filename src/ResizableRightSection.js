@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ResizableRightSection.css"; // Create this CSS file for styling
 
 const ResizableRightSection = () => {
-  const [width, setWidth] = useState(300);
+  const [width, setWidth] = useState(336);
 
   const handleResize = (e) => {
     setWidth(window.innerWidth - e.clientX);
@@ -20,8 +20,7 @@ const ResizableRightSection = () => {
 
   return (
     <div className="resizable-right-section" style={{ width: width }}>
-      <div className="resizer" onMouseDown={handleMouseDown}></div>
-      <p>Right section</p>
+      <div className="resizer-right" onMouseDown={handleMouseDown}></div>
       {/* Add content for the resizable right section */}
     </div>
   );

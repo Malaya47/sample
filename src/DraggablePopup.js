@@ -39,7 +39,10 @@ const DraggablePopup = ({ onClose }) => {
           <CloseIcon />
         </button>
       </div>
-      <div className="popup-content">{/* Add your popup content here */}</div>
+      <div className="popup-content">
+        <p>I am the content!!</p>
+        {/* Add your popup content here */}
+      </div>
     </div>
   );
 };
