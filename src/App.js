@@ -28,7 +28,7 @@ const App = () => {
         <ResizableLeftSection />
         <ResizableRightSection />
       </div>
-      <footer className="footer">footer</footer>
+      <footer className="footer"></footer>
     </div>
   );
 };
